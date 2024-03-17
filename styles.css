@@ -1,0 +1,151 @@
+body {
+  font-family: "Solway", serif;
+  background-color: #352f5b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 20px 10px;
+  margin-top: 30px;
+}
+
+.container h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 30px;
+  color: white;
+}
+
+#taskList {
+  list-style: none;
+  padding: 0;
+}
+
+#taskList li {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  margin-top: 20px;
+}
+
+#taskList li.completed {
+  background-color: #c0e5a0;
+
+}
+
+#taskList li[contenteditable="true"] {
+  outline: 2px solid #5d9cec;
+
+}
+
+#taskList li[contenteditable="true"]:focus {
+  outline-width: 3px;
+
+}
+
+#taskList .actions button {
+  padding: 5px 10px;
+  margin-right: 5px;
+  background-color: #352f5b;
+  border: none;
+  color: white;
+  border-radius: 3px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+#taskList .actions button:hover {
+  background-color: #524a86;
+}
+
+.task .actions button:focus {
+  outline: none;
+
+}
+
+.task-checkbox {
+  width: 15px;
+  height: 15px;
+}
+
+.task p {
+  display: inline-block;
+  padding-left: 10px;
+}
+
+.status {
+  float: right;
+  font-size: 12px;
+  margin-top: 5px;
+  color: #777;
+}
+
+#saveTaskBtn {
+  padding: 8px 15px;
+  border: none;
+  color: white;
+  background-color: transparent;
+  border: 1px solid;
+  font-size: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+#addTaskBtn {
+  padding: 8px 15px;
+  border: none;
+  color: white;
+  background-color: transparent;
+  border: 1px solid;
+  font-size: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+#completeTasksBtn {
+  padding: 8px 15px;
+  border: none;
+  color: white;
+  background-color: transparent;
+  border: 1px solid;
+  font-size: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+#deleteTasksBtn {
+  padding: 8px 15px;
+  border: none;
+  color: white;
+  background-color: transparent;
+  border: 1px solid;
+  font-size: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+@media only screen and (min-width: 780px) {
+  .container {
+    width: 800px;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .container {
+    margin-top: 200px;
+    padding: 20px;
+
+  }
+}

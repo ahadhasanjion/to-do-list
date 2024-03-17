@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/froala-editor/4.1.4/css/froala_editor.pkgd.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/froala-editor/4.1.4/css/froala_style.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Solway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>ELito. | To-Do List</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>To-Do List</h1>
+      <div id="taskEditor"></div>
+      <div id="editEditor" style="display: none"></div>
+      <!-- Hidden editing area -->
+      <button id="addTaskBtn">Add Task</button>
+      <button id="editButton" style="display: none">Edit Task</button>
+
+      <button id="saveTaskBtn" style="display: none">Save</button>
+
+      <!-- Save button -->
+      <button id="completeTasksBtn" style="display: none">
+        Complete Selected Tasks
+      </button>
+      <button id="deleteTasksBtn" style="display: none">
+        Delete Selected Tasks
+      </button>
+
+      <ul id="taskList">
+        <!-- Task items will be dynamically added here -->
+      </ul>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/froala-editor/4.1.4/js/froala_editor.pkgd.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
